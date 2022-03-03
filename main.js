@@ -109,14 +109,14 @@ function isRoundWinner(){
             msg.innerHTML = "Player Won this round";
             playerDeck.push(playerCard);
             playerDeck.push(computerCard);
-			      computerEl.innerText = computerDeck.length;
+	    computerEl.innerText = computerDeck.length;
             playerEl.innerText = playerDeck.length;
 			
         }else if(playerCard.value < computerCard.value){
             msg.innerHTML = "Computer Won this round";
             computerDeck.push(computerCard);
             computerDeck.push(playerCard);
-		      	computerEl.innerText = computerDeck.length ;
+            computerEl.innerText = computerDeck.length ;
             playerEl.innerText = playerDeck.length;
           }
   	}
