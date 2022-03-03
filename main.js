@@ -103,20 +103,20 @@ function isRoundWinner(){
 
   }else if (playerCard.value === computerCard.value){
     msg.innerHTML = "WAR, flip the cards again";
-    playerDeck.splice(playerCard, 3);
-     computerDeck.splice(computerCard, 3);
+    playerCard = playerDeck.splice(playerCard, 3);
+    computerCard = computerDeck.splice(computerCard, 3);
        if(playerCard.value > computerCard.value){
             msg.innerHTML = "Player Won this round";
             playerDeck.push(playerCard);
             playerDeck.push(computerCard);
-			computerEl.innerText = computerDeck.length;
+			      computerEl.innerText = computerDeck.length;
             playerEl.innerText = playerDeck.length;
 			
         }else if(playerCard.value < computerCard.value){
             msg.innerHTML = "Computer Won this round";
             computerDeck.push(computerCard);
             computerDeck.push(playerCard);
-			computerEl.innerText = computerDeck.length ;
+		      	computerEl.innerText = computerDeck.length ;
             playerEl.innerText = playerDeck.length;
           }
   	}
