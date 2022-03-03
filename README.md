@@ -4,7 +4,7 @@
 
 <p>Technologies used: JavaScript, jQuery, Css and HTML.</p>
 
-<p>Game can be played at <span><a></a>  </span></p>
+<p>Game can be played at <span><a href="https://zarax7.github.io/War/">Click here</a>  </span></p>
 
 
 <h2>Game Walkthrough</h2>
