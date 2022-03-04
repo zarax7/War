@@ -105,6 +105,8 @@ function isRoundWinner(){
     msg.innerHTML = "WAR, flip the cards again";
     playerCard = playerDeck.splice(playerCard, 3);
     computerCard = computerDeck.splice(computerCard, 3);
+    playerCard.value = playerCard;
+    computerCard.value = computerCard;
        if(playerCard.value > computerCard.value){
             msg.innerHTML = "Player Won this round";
             playerDeck.push(playerCard);
